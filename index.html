@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Teste Front-End</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn navicons">
+            <img src="svgs/icon_hamburguer.svg"/></button>
+                <div class="dropdown-content">
+                    <div class="lado">
+                        <a href="#">Luta</a>
+                        <a href="#">Mortal Kombat</a>
+                        <a href="#">Smash Bros</a>
+                        <a href="#">Killer Instict</a>
+                        <a href="#"> DBZ Kakarot</a>
+                    </div>
+                    <div class="lado">
+                        <a href="#">Ação / Aventura</a>
+                        <a href="#">GTA V </a>
+                        <a href="#">Tomb Raider</a>
+                        <a href="#">HALO</a>
+                        <a href="#">Call of Duty</a>
+                    </div>
+                    <div class="lado">
+                        <a href="#">Corrida</a>
+                        <a href="#">NEED For SPEED</a>
+                        <a href="#"> Forza Horizon</a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="" class="navicons"><img src="svgs/logo.svg"></a>
+            <a href="" class="navicons"><img src="svgs/shopping-bag-solid.svg" /></a>
+            <a href="" class="navicons"><img src="svgs/search-solid.svg" />
+                <p>Buscar</p>
+            </a>
+            <a href="" class="navicons"><img src="svgs/paper-plane.svg" />
+                <p>Contato</p>
+            </a>
+            <div id="notify">
+                <span class="dot" id="blue">
+                    <p id="ncarrinho"></p>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="fade">
+        <section class="mortalkom">
+            <div class="nextprev__slides">
+                <p>Mortal Kombat </p>
+            </div>
+            <img class="desktop" src="img/principal_banner_desktop.jpg">
+            <img class="mobile" src="img/principal_banner_mobile.jpg">
+            <div class="desc_mortal">
+                <h2>Mortal Kombat</h2>
+                <h1>R$ 299<sup>,99</sup></h1>
+                <p>
+                    Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.
+                </p>
+            </div>
+        </section>
+        <section class="reddead">
+            <div class="nextprev__slides">
+                <p>Red dead redemption II</p>
+            </div>
+            <img class="desktop" src="img/principal_banner_desktop_02.jpg">
+            <img class="mobile" src="img/principal_banner_mobile_02.jpg">
+            <div class="desc_red">
+                <h2>Red dead redemption II</h2>
+                <h1>R$ 489<sup>,90</sup></h1>
+                <p>
+                    Red Dead Redemption 2 é um jogo eletrônico de ação-aventura desenvolvido e publicado pela Rockstar Games. É o terceiro título da série Red Dead e uma prequela de Red Dead Redemption, tendo sido lançado em outubro de 2018 para PlayStation 4 e Xbox One
+                    e em novembro de 2019 para Microsoft Windows e Google Stadia.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <div class="jogos">
+        <div class="img__jogos">
+            <img src="img/zelda_banner.jpg" />
+            <section class="legenda">
+                <p>The Legend of Zelda - Breath of the wild</p>
+            </section>
+        </div>
+        <div class="img__jogos">
+            <img src="img/sekiro_banner.jpg" />
+            <section class="legenda">
+                <p>SEKIRO - Shadows die twice</p>
+            </section>
+        </div>
+    </div>
+
+    <h3>Produtos em destaque</h3>
+    <div class="cards">
+        <div class="jogos__card">
+            <img src="img/principal_banner_mobile.jpg">
+            <p> Outrides</p>
+            <p class="preco">R$28.90</p>
+            <button class="btcomprar  " onclick="document.getElementById('modalcompra').style.display='block'"> Comprar</button>
+            </p>
+        </div>
+        <div class="jogos__card">
+            <img src="img/principal_banner_mobile_02.jpg">
+            <p> Cyberpunk 2077</p>
+            <p class="preco">R$98.90</p>
+            <button class="btcomprar  " onclick="document.getElementById('modalcompra').style.display='block'"> Comprar</button>
+            </p>
+        </div>
+        <div class="jogos__card">
+            <img src="img/principal_banner_mobile.jpg">
+            <p> Donkey Kong</p>
+            <p class="preco">R$248.90</p>
+            <button class="btcomprar  " onclick="document.getElementById('modalcompra').style.display='block'"> Comprar</button>
+            </p>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+
+    <div id="modalcompra" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-container">
+                <span onclick="document.getElementById('modalcompra').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <div class="conteudo__modal">
+                    <p>Pedido realizado com sucesso</p>
+                    <img src="svgs/mario.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="svgs/logo2.svg">
+        <p>Agência N1 - Todos os direitos reservados</p>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./slick-1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+</html>
